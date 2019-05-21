@@ -138,6 +138,7 @@ php:
     - lumen
     - zend-expressive
     - zend-framework
+    - roadrunner_slim
 
 c:
   depends_on:
@@ -542,6 +543,11 @@ zend-framework:
   commands:
     - docker build -t zend-framework .
   dir: php/zend-framework
+
+roadrunner_slim:
+  commands:
+    - docker build -t roadrunner_slim .
+  dir: php/roadrunner_slim
 
 kore:
   commands:

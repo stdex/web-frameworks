@@ -1,0 +1,7 @@
+http:
+  enable: true
+  address: 0.0.0.0:3000
+  workers:
+    command: "php /var/www/app/worker.php"
+    pool:
+      numWorkers: 4
